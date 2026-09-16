@@ -1,7 +1,10 @@
 {
-  "colors" : [
+  "images" : [
     {
-      "idiom" : "universal"
+      "filename" : "icon_1024.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
     }
   ],
   "info" : {
