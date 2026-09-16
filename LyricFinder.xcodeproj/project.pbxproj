@@ -1,0 +1,158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		CD83A125905333220435EF6E = {isa = PBXBuildFile; fileRef = C30AB213B7D75419550A5BF7; };
+		3306E0C7E236CC2C23480EC1 = {isa = PBXBuildFile; fileRef = DF6D0E7AB020FC4152C03879; };
+		E5B344046D0208D9B50A4C56 = {isa = PBXBuildFile; fileRef = B8D52167FA1F0B5CFDC37FFE; };
+		9AD90CEB831549C6E7201DBA = {isa = PBXBuildFile; fileRef = 0AFF575D84607F017FCA993D; };
+		04653D63A980A2C48D2001F2 = {isa = PBXBuildFile; fileRef = DD4A44197F57D3C5C71F326F; };
+		F4FCF952FE1CA1A526F30A73 = {isa = PBXBuildFile; fileRef = A09091DD0648EEB058677FA2; };
+		F3E35A0971B7C444B8CEE087 = {isa = PBXBuildFile; fileRef = 05B9E35DA2F9774C00BF14B8; };
+		1F04DCB09766169C4FFB4575 = {isa = PBXBuildFile; fileRef = 5C95B9DFA0E9EB35A106272A; };
+		0CBDB271963C02E6873C0E73 = {isa = PBXBuildFile; fileRef = 88AC9D423FF206569E47D28C; };
+		D1C244037E2F9AFA993F3738 = {isa = PBXBuildFile; fileRef = 715D5F055B2280DEB47C9585; };
+		63C324DAE91222CD5AA0188A = {isa = PBXBuildFile; fileRef = 007498E8746D4C7773ACDB89; };
+		4F52F5924A6D7AB34B0F7B5A = {isa = PBXBuildFile; fileRef = CF6C4E38975E225D226CC551; };
+		E8DB792202C41C70D95D280F = {isa = PBXBuildFile; fileRef = 3378880D4F9D3E5822B44AC6; };
+		B9294C2104F27DAECBC8720F = {isa = PBXBuildFile; fileRef = F3926B8EE75B7D1BB24A6E2C; };
+		37A396D64708778F44BCE005 = {isa = PBXBuildFile; fileRef = 62F4117470AD381A8B4EE3D7; };
+		5ECCA5BD910D10966FC06FD8 = {isa = PBXBuildFile; fileRef = 841024BF663F2EFE0801C8EB; };
+		0044F3F871445E86ACED376A = {isa = PBXBuildFile; fileRef = 5E076B6CDBB87B9629D00A80; };
+		3D8CE7E1492C086B9C4CD48F = {isa = PBXBuildFile; fileRef = 6A2ABA3BDD12BAB7586FAD4D; };
+		94AB7F2771491B49E91990D1 = {isa = PBXBuildFile; fileRef = 8F9E0260F17EA272225D5C9A; };
+		AB5FE44F1E311CEF855266CC = {isa = PBXBuildFile; fileRef = 46EDB5AEE662F9B7B6F3D4B7; };
+		B73BB590A1260BE6BA668772 = {isa = PBXBuildFile; fileRef = 61F5800D2AD392DC10CE46B3; };
+		8B350B908E8FD3CB3D0D0079 = {isa = PBXBuildFile; fileRef = 976DE7ACAB71BA168A910EB9; };
+		49322812BF25A89CEA02B43D = {isa = PBXBuildFile; fileRef = B1376C59CFC310B39A93F99C; };
+		C30AB213B7D75419550A5BF7 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricFinderApp.swift; path = LyricFinder/LyricFinderApp.swift; sourceTree = SOURCE_ROOT; };
+		DF6D0E7AB020FC4152C03879 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioImportManager.swift; path = LyricFinder/Managers/AudioImportManager.swift; sourceTree = SOURCE_ROOT; };
+		B8D52167FA1F0B5CFDC37FFE = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AudioPlayerManager.swift; path = LyricFinder/Managers/AudioPlayerManager.swift; sourceTree = SOURCE_ROOT; };
+		0AFF575D84607F017FCA993D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExportManager.swift; path = LyricFinder/Managers/ExportManager.swift; sourceTree = SOURCE_ROOT; };
+		DD4A44197F57D3C5C71F326F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProjectManager.swift; path = LyricFinder/Managers/ProjectManager.swift; sourceTree = SOURCE_ROOT; };
+		A09091DD0648EEB058677FA2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VocalSeparationManager.swift; path = LyricFinder/Managers/VocalSeparationManager.swift; sourceTree = SOURCE_ROOT; };
+		05B9E35DA2F9774C00BF14B8 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WhisperTranscriptionManager.swift; path = LyricFinder/Managers/WhisperTranscriptionManager.swift; sourceTree = SOURCE_ROOT; };
+		5C95B9DFA0E9EB35A106272A = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricLine.swift; path = LyricFinder/Models/LyricLine.swift; sourceTree = SOURCE_ROOT; };
+		88AC9D423FF206569E47D28C = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TranscriptionProject.swift; path = LyricFinder/Models/TranscriptionProject.swift; sourceTree = SOURCE_ROOT; };
+		715D5F055B2280DEB47C9585 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WhisperModelType.swift; path = LyricFinder/Models/WhisperModelType.swift; sourceTree = SOURCE_ROOT; };
+		007498E8746D4C7773ACDB89 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricsParser.swift; path = LyricFinder/Parsing/LyricsParser.swift; sourceTree = SOURCE_ROOT; };
+		CF6C4E38975E225D226CC551 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricsSyncManager.swift; path = LyricFinder/Parsing/LyricsSyncManager.swift; sourceTree = SOURCE_ROOT; };
+		3378880D4F9D3E5822B44AC6 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = LyricFinder/Utilities/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		F3926B8EE75B7D1BB24A6E2C = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageManager.swift; path = LyricFinder/Utilities/StorageManager.swift; sourceTree = SOURCE_ROOT; };
+		62F4117470AD381A8B4EE3D7 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricRowView.swift; path = LyricFinder/Views/Components/LyricRowView.swift; sourceTree = SOURCE_ROOT; };
+		841024BF663F2EFE0801C8EB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaveformView.swift; path = LyricFinder/Views/Components/WaveformView.swift; sourceTree = SOURCE_ROOT; };
+		5E076B6CDBB87B9629D00A80 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibraryView.swift; path = LyricFinder/Views/LibraryView.swift; sourceTree = SOURCE_ROOT; };
+		6A2ABA3BDD12BAB7586FAD4D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LyricsEditorView.swift; path = LyricFinder/Views/LyricsEditorView.swift; sourceTree = SOURCE_ROOT; };
+		8F9E0260F17EA272225D5C9A = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabView.swift; path = LyricFinder/Views/MainTabView.swift; sourceTree = SOURCE_ROOT; };
+		46EDB5AEE662F9B7B6F3D4B7 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NowPlayingView.swift; path = LyricFinder/Views/NowPlayingView.swift; sourceTree = SOURCE_ROOT; };
+		61F5800D2AD392DC10CE46B3 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = LyricFinder/Views/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		976DE7ACAB71BA168A910EB9 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TranscribeView.swift; path = LyricFinder/Views/TranscribeView.swift; sourceTree = SOURCE_ROOT; };
+		B1376C59CFC310B39A93F99C = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = LyricFinder/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		DF56A81F6C35A89FD50C8B5E = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F279894B2C0244AB14D9678A = {isa = PBXGroup; children = (
+				5C95B9DFA0E9EB35A106272A,
+				88AC9D423FF206569E47D28C,
+				715D5F055B2280DEB47C9585
+			); name = Models; sourceTree = "<group>"; };
+		7B9A26E0A67637EE2694E985 = {isa = PBXGroup; children = (
+				DF6D0E7AB020FC4152C03879,
+				B8D52167FA1F0B5CFDC37FFE,
+				0AFF575D84607F017FCA993D,
+				DD4A44197F57D3C5C71F326F,
+				A09091DD0648EEB058677FA2,
+				05B9E35DA2F9774C00BF14B8
+			); name = Managers; sourceTree = "<group>"; };
+		4DB8DB915E98DEE798D91109 = {isa = PBXGroup; children = (
+				007498E8746D4C7773ACDB89,
+				CF6C4E38975E225D226CC551
+			); name = Parsing; sourceTree = "<group>"; };
+		6E5144E6BC49F50DA57BA885 = {isa = PBXGroup; children = (
+				3378880D4F9D3E5822B44AC6,
+				F3926B8EE75B7D1BB24A6E2C
+			); name = Utilities; sourceTree = "<group>"; };
+		F126C1FFD7011ABA77259A8F = {isa = PBXGroup; children = (
+				62F4117470AD381A8B4EE3D7,
+				841024BF663F2EFE0801C8EB
+			); name = Components; sourceTree = "<group>"; };
+		D792C0B955B165029150ADCE = {isa = PBXGroup; children = (
+				5E076B6CDBB87B9629D00A80,
+				6A2ABA3BDD12BAB7586FAD4D,
+				8F9E0260F17EA272225D5C9A,
+				46EDB5AEE662F9B7B6F3D4B7,
+				61F5800D2AD392DC10CE46B3,
+				976DE7ACAB71BA168A910EB9,
+				F126C1FFD7011ABA77259A8F
+			); name = Views; sourceTree = "<group>"; };
+		20F4BD606C0F6D1645AE4919 = {isa = PBXGroup; children = (
+				C30AB213B7D75419550A5BF7,
+F279894B2C0244AB14D9678A,
+7B9A26E0A67637EE2694E985,
+4DB8DB915E98DEE798D91109,
+6E5144E6BC49F50DA57BA885,
+D792C0B955B165029150ADCE,
+				B1376C59CFC310B39A93F99C
+			); name = LyricFinder; path = LyricFinder; sourceTree = "<group>"; };
+		D8DBA3F9900DD17689CA0C4D = {isa = PBXGroup; children = (
+				20F4BD606C0F6D1645AE4919
+			); name = src; sourceTree = "<group>"; };
+		2B731CEFC6751AAE0EC69B98 = {isa = PBXGroup; children = (
+				D8DBA3F9900DD17689CA0C4D,
+				DF56A81F6C35A89FD50C8B5E
+			); sourceTree = "<group>"; };
+		0F78FE532035D122ED352DBA = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				CD83A125905333220435EF6E,
+				3306E0C7E236CC2C23480EC1,
+				E5B344046D0208D9B50A4C56,
+				9AD90CEB831549C6E7201DBA,
+				04653D63A980A2C48D2001F2,
+				F4FCF952FE1CA1A526F30A73,
+				F3E35A0971B7C444B8CEE087,
+				1F04DCB09766169C4FFB4575,
+				0CBDB271963C02E6873C0E73,
+				D1C244037E2F9AFA993F3738,
+				63C324DAE91222CD5AA0188A,
+				4F52F5924A6D7AB34B0F7B5A,
+				E8DB792202C41C70D95D280F,
+				B9294C2104F27DAECBC8720F,
+				37A396D64708778F44BCE005,
+				5ECCA5BD910D10966FC06FD8,
+				0044F3F871445E86ACED376A,
+				3D8CE7E1492C086B9C4CD48F,
+				94AB7F2771491B49E91990D1,
+				AB5FE44F1E311CEF855266CC,
+				B73BB590A1260BE6BA668772,
+				8B350B908E8FD3CB3D0D0079
+			); runOnlyForDeploymentPostprocessing = 0; };
+		DAF6AA633395B1B76148E35B = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+			); runOnlyForDeploymentPostprocessing = 0; };
+		943E4BBD9B51C81965501BA3 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+				49322812BF25A89CEA02B43D
+			); runOnlyForDeploymentPostprocessing = 0; };
+		42AEFBAE01D2DFD981F7DA7D = {isa = PBXNativeTarget; buildConfigurationList = C892833D335B0F40CD5A5FAB; buildPhases = (
+				0F78FE532035D122ED352DBA,
+				DAF6AA633395B1B76148E35B,
+				943E4BBD9B51C81965501BA3
+			); buildRules = (
+			); dependencies = (
+			); name = LyricFinder; productName = LyricFinder; productReference = DF56A81F6C35A89FD50C8B5E; productType = "com.apple.product-type.application"; };
+		46F86FAA6BBF9AC94A7E4595 = {isa = PBXProject; attributes = { LastSwiftUpdateCheck = 1700; LastUpgradeCheck = 1700; }; buildConfigurationList = 5CF8C997E0150571D04AA034; compatibilityVersion = "Xcode 15.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en); mainGroup = 2B731CEFC6751AAE0EC69B98; productRefGroup = 2B731CEFC6751AAE0EC69B98; projectDirPath = ""; projectRoot = ""; targets = (
+				42AEFBAE01D2DFD981F7DA7D
+			); };
+		5CF8C997E0150571D04AA034 = {isa = XCConfigurationList; buildConfigurations = (
+				A445AD74701EA5AAA9DF91B6,
+				3067371FD1D9B9A50DC71202
+			); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C892833D335B0F40CD5A5FAB = {isa = XCConfigurationList; buildConfigurations = (
+				0C2C64FD5ECC0D76BBDAF8DD,
+				E842347A955D5A05F03180BC
+			); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A445AD74701EA5AAA9DF91B6 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_IDENTITY = "-"; CURRENT_PROJECT_VERSION = 1; DEBUG_INFORMATION_FORMAT = dwarf; GCC_OPTIMIZATION_LEVEL = 0; MARKETING_VERSION = 1.0; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+		3067371FD1D9B9A50DC71202 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_IDENTITY = "-"; CURRENT_PROJECT_VERSION = 1; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; MARKETING_VERSION = 1.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+		0C2C64FD5ECC0D76BBDAF8DD = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = LyricFinder; INFOPLIST_KEY_LSRequiresIPhoneOS = YES; INFOPLIST_KEY_UIBackgroundModes = (audio); INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UIRequiredDeviceCapabilities = (armv7); INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault; INFOPLIST_KEY_UISupportedInterfaceOrientations = (UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight); IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.lyricfinder.app; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		E842347A955D5A05F03180BC = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = LyricFinder; INFOPLIST_KEY_LSRequiresIPhoneOS = YES; INFOPLIST_KEY_UIBackgroundModes = (audio); INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UIRequiredDeviceCapabilities = (armv7); INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault; INFOPLIST_KEY_UISupportedInterfaceOrientations = (UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight); IPHONEOS_DEPLOYMENT_TARGET = 17.0; LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks"); MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.lyricfinder.app; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595;
+}

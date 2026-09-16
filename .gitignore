@@ -1,0 +1,23 @@
+# Xcode
+DerivedData/
+*.xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Build products
+build/
+*.ipa
+*.dSYM.zip
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Local server workdir (Demucs outputs can be huge — never commit)
+/ServerHelper/.venv/
+*.wav
+*.mp3
+*.m4a
+!/LyricFinder/LyricFinder/Assets.xcassets/**/*.json
