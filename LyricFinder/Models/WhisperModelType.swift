@@ -62,6 +62,8 @@ enum WhisperModelType: String, CaseIterable, Identifiable, Codable {
     }
 
     /// WhisperKit model identifier slug.
+    /// Verified against the argmaxinc/whisperkit-coreml repo: each slug below
+    /// resolves to exactly one model folder via WhisperKit's lookup.
     var whisperKitModelSlug: String {
         switch self {
         case .tiny: return "openai_whisper-tiny"
@@ -69,7 +71,7 @@ enum WhisperModelType: String, CaseIterable, Identifiable, Codable {
         case .small: return "openai_whisper-small"
         case .medium: return "openai_whisper-medium"
         case .large: return "openai_whisper-large-v3"
-        case .turbo: return "openai_whisper-large-v3-turbo"
+        case .turbo: return "openai_whisper-large-v3_turbo"
         }
     }
 }

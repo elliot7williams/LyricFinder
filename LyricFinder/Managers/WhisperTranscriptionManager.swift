@@ -232,6 +232,7 @@ struct MockTranscriptionEngine: TranscriptionEngine {
 }
 
 #if canImport(WhisperKit)
+import AVFoundation
 import WhisperKit
 
 /// Production engine backed by WhisperKit (Core ML, on-device, offline).
@@ -244,10 +245,40 @@ struct WhisperKitEngine: TranscriptionEngine {
         language: String,
         progress: @escaping @Sendable (Double, String) -> Void
     ) async throws -> [TranscriptionSegment] {
-        progress(0.05, "Loading \(model.displayName) model…")
-        let pipe = try await WhisperKit(model: model.whisperKitModelSlug)
+        // First launch downloads the model (~75 MB–2.9 GB depending on size);
+        // afterwards everything is offline from the on-device cache.
+        progress(0.05, "Loading \(model.displayName) model… (first run downloads it)")
+        let pipe = try await WhisperKit(model: model.whisperKitModelSlug, verbose: false)
+        try Task.checkCancellation()
+
+        // Word timestamps ON so the Now Playing view can do karaoke
+        // highlighting; language nil = auto-detect.
+        let options = DecodingOptions(
+            task: .transcribe,
+            language: language == "auto" ? nil : language,
+            wordTimestamps: true
+        )
         progress(0.2, "Transcribing with \(model.displayName)…")
-        let results: [TranscriptionResult] = try await pipe.transcribe(audioPath: audioURL.path)
+
+        // Throttles status updates: the callback fires per decode step, but
+        // we only hop to the main actor when newly decoded text appears.
+        let tracker = SnippetTracker()
+        let results: [TranscriptionResult] = try await pipe.transcribe(
+            audioPath: audioURL.path,
+            decodeOptions: options
+        ) { prog in
+            let snippet = String(prog.text.suffix(80))
+            if tracker.shouldReport(snippet) {
+                let message = snippet.isEmpty
+                    ? "Transcribing with \(model.displayName)…"
+                    : "Heard: “…\(snippet)”"
+                Task { @MainActor in progress(0.5, message) }
+            }
+            // Returning false aborts decoding promptly on Cancel.
+            return Task.isCancelled ? false : nil
+        }
+        try Task.checkCancellation()
+
         var segments: [TranscriptionSegment] = []
         for r in results {
             for s in r.segments {
@@ -264,6 +295,21 @@ struct WhisperKitEngine: TranscriptionEngine {
         }
         progress(1.0, "Transcription complete")
         return segments
+    }
+}
+
+/// Thread-safe "only report when the text changed" gate for the decode
+/// callback, which may fire thousands of times from background threads.
+/// `lock` serializes all access to `last`, hence unchecked Sendable.
+private final class SnippetTracker: @unchecked Sendable {
+    private let lock = NSLock()
+    private var last = ""
+    func shouldReport(_ snippet: String) -> Bool {
+        lock.lock()
+        defer { lock.unlock() }
+        guard snippet != last else { return false }
+        last = snippet
+        return true
     }
 }
 #else
